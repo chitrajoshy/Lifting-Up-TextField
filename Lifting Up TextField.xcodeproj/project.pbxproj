@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05C86C981C7DA8AE48B907B7 /* Pods_Lifting_Up_TextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D827D38011BDCE98F66F1BC6 /* Pods_Lifting_Up_TextField.framework */; };
 		383C94E722F3745000F20879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383C94E622F3745000F20879 /* AppDelegate.swift */; };
 		383C94E922F3745000F20879 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383C94E822F3745000F20879 /* ViewController.swift */; };
 		383C94EC22F3745000F20879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383C94EA22F3745000F20879 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		383C94ED22F3745100F20879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		383C94F022F3745100F20879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		383C94F222F3745100F20879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A09A15287B909245FE7AC99 /* Pods-Lifting Up TextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lifting Up TextField.release.xcconfig"; path = "Target Support Files/Pods-Lifting Up TextField/Pods-Lifting Up TextField.release.xcconfig"; sourceTree = "<group>"; };
+		D827D38011BDCE98F66F1BC6 /* Pods_Lifting_Up_TextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lifting_Up_TextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82DE7628F6C4584EDE3360D /* Pods-Lifting Up TextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lifting Up TextField.debug.xcconfig"; path = "Target Support Files/Pods-Lifting Up TextField/Pods-Lifting Up TextField.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C86C981C7DA8AE48B907B7 /* Pods_Lifting_Up_TextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22E28764EFDC88653706A312 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D82DE7628F6C4584EDE3360D /* Pods-Lifting Up TextField.debug.xcconfig */,
+				6A09A15287B909245FE7AC99 /* Pods-Lifting Up TextField.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		37F95A90A4290340CAA28EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D827D38011BDCE98F66F1BC6 /* Pods_Lifting_Up_TextField.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		383C94DA22F3745000F20879 = {
 			isa = PBXGroup;
 			children = (
 				383C94E522F3745000F20879 /* Lifting Up TextField */,
 				383C94E422F3745000F20879 /* Products */,
+				22E28764EFDC88653706A312 /* Pods */,
+				37F95A90A4290340CAA28EC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,46 @@
 		383C94E522F3745000F20879 /* Lifting Up TextField */ = {
 			isa = PBXGroup;
 			children = (
-				383C94E622F3745000F20879 /* AppDelegate.swift */,
-				383C94E822F3745000F20879 /* ViewController.swift */,
+				383C94FA22F3750200F20879 /* Controller */,
+				383C94F922F374F900F20879 /* View */,
+				383C94F822F374EF00F20879 /* Model */,
+				383C94FB22F3751B00F20879 /* Supporting Files */,
+			);
+			path = "Lifting Up TextField";
+			sourceTree = "<group>";
+		};
+		383C94F822F374EF00F20879 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		383C94F922F374F900F20879 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				383C94EA22F3745000F20879 /* Main.storyboard */,
 				383C94ED22F3745100F20879 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		383C94FA22F3750200F20879 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				383C94E622F3745000F20879 /* AppDelegate.swift */,
+				383C94E822F3745000F20879 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		383C94FB22F3751B00F20879 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				383C94EF22F3745100F20879 /* LaunchScreen.storyboard */,
 				383C94F222F3745100F20879 /* Info.plist */,
 			);
-			path = "Lifting Up TextField";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 383C94F522F3745100F20879 /* Build configuration list for PBXNativeTarget "Lifting Up TextField" */;
 			buildPhases = (
+				7BA3D84C4BB05B4A826D4A72 /* [CP] Check Pods Manifest.lock */,
 				383C94DF22F3745000F20879 /* Sources */,
 				383C94E022F3745000F20879 /* Frameworks */,
 				383C94E122F3745000F20879 /* Resources */,
+				E40DBCA6F04A0EB2D5304EA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +187,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BA3D84C4BB05B4A826D4A72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lifting Up TextField-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E40DBCA6F04A0EB2D5304EA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lifting Up TextField/Pods-Lifting Up TextField-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lifting Up TextField/Pods-Lifting Up TextField-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lifting Up TextField/Pods-Lifting Up TextField-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		383C94DF22F3745000F20879 /* Sources */ = {
@@ -280,11 +380,12 @@
 		};
 		383C94F622F3745100F20879 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D82DE7628F6C4584EDE3360D /* Pods-Lifting Up TextField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6DBRF948JS;
-				INFOPLIST_FILE = "Lifting Up TextField/Info.plist";
+				DEVELOPMENT_TEAM = VQW7YJLLCV;
+				INFOPLIST_FILE = "$(SRCROOT)/Lifting Up TextField/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +399,12 @@
 		};
 		383C94F722F3745100F20879 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A09A15287B909245FE7AC99 /* Pods-Lifting Up TextField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6DBRF948JS;
-				INFOPLIST_FILE = "Lifting Up TextField/Info.plist";
+				DEVELOPMENT_TEAM = VQW7YJLLCV;
+				INFOPLIST_FILE = "$(SRCROOT)/Lifting Up TextField/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

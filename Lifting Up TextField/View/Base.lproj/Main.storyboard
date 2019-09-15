@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lifting_Up_TextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-texture_1160-888" translatesAutoresizingMaskIntoConstraints="NO" id="2Wg-8m-tFq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIp-O5-bhH" userLabel="MiddleView">
+                                <rect key="frame" x="0.0" y="93" width="375" height="464"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5dt-22-S0H">
+                                        <rect key="frame" x="62" y="8" width="251" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="YCU-ey-ltA">
+                                        <rect key="frame" x="62" y="138" width="251" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-6e-FaF">
+                                        <rect key="frame" x="62" y="73" width="251" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxf-QF-dh3">
+                                        <rect key="frame" x="62" y="203" width="84" height="32"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="20"/>
+                                        <state key="normal" title="SUBMIT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M69-Mf-yev">
+                                        <rect key="frame" x="226" y="203" width="87" height="32"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="20"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="M69-Mf-yev" secondAttribute="trailing" constant="62" id="EX2-nf-IcJ"/>
+                                    <constraint firstItem="YCU-ey-ltA" firstAttribute="top" secondItem="NiT-6e-FaF" secondAttribute="bottom" constant="35" id="I1n-fX-zpR"/>
+                                    <constraint firstAttribute="trailing" secondItem="YCU-ey-ltA" secondAttribute="trailing" constant="62" id="NJJ-kz-T9Q"/>
+                                    <constraint firstItem="NiT-6e-FaF" firstAttribute="leading" secondItem="hIp-O5-bhH" secondAttribute="leading" constant="62" id="Qyb-af-cxO"/>
+                                    <constraint firstAttribute="trailing" secondItem="5dt-22-S0H" secondAttribute="trailing" constant="62" id="YUH-Ca-ena"/>
+                                    <constraint firstAttribute="trailing" secondItem="NiT-6e-FaF" secondAttribute="trailing" constant="62" id="hBq-3K-s9k"/>
+                                    <constraint firstItem="YCU-ey-ltA" firstAttribute="leading" secondItem="hIp-O5-bhH" secondAttribute="leading" constant="62" id="kQA-0g-8iu"/>
+                                    <constraint firstItem="M69-Mf-yev" firstAttribute="top" secondItem="YCU-ey-ltA" secondAttribute="bottom" constant="35" id="onh-CE-b5K"/>
+                                    <constraint firstItem="5dt-22-S0H" firstAttribute="leading" secondItem="hIp-O5-bhH" secondAttribute="leading" constant="62" id="ozL-bo-3MM"/>
+                                    <constraint firstItem="Rxf-QF-dh3" firstAttribute="leading" secondItem="hIp-O5-bhH" secondAttribute="leading" constant="62" id="rIS-uN-7KA"/>
+                                    <constraint firstItem="5dt-22-S0H" firstAttribute="top" secondItem="hIp-O5-bhH" secondAttribute="top" constant="8" id="t2B-WF-pUk"/>
+                                    <constraint firstItem="NiT-6e-FaF" firstAttribute="top" secondItem="5dt-22-S0H" secondAttribute="bottom" constant="35" id="vaX-Q3-yAO"/>
+                                    <constraint firstItem="Rxf-QF-dh3" firstAttribute="top" secondItem="YCU-ey-ltA" secondAttribute="bottom" constant="35" id="xZL-Jt-ryP"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACT DETAILS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bDM-SJ-IGZ">
+                                <rect key="frame" x="47" y="35" width="281" height="28"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Wg-8m-tFq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1SZ-WG-KuJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bDM-SJ-IGZ" secondAttribute="trailing" constant="47" id="44X-jS-gGI"/>
+                            <constraint firstItem="bDM-SJ-IGZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="Egk-FF-DAk"/>
+                            <constraint firstItem="hIp-O5-bhH" firstAttribute="top" secondItem="bDM-SJ-IGZ" secondAttribute="bottom" constant="30" id="F5g-kM-bod"/>
+                            <constraint firstItem="2Wg-8m-tFq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HRN-Fi-Pah"/>
+                            <constraint firstItem="bDM-SJ-IGZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="HZc-LB-qQK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hIp-O5-bhH" secondAttribute="bottom" constant="110" id="I2p-kh-G96"/>
+                            <constraint firstItem="hIp-O5-bhH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jqm-3X-c2i"/>
+                            <constraint firstItem="hIp-O5-bhH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S3q-Xw-C0w"/>
+                            <constraint firstItem="2Wg-8m-tFq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aE9-L6-HOa"/>
+                            <constraint firstItem="2Wg-8m-tFq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="iyo-Uw-Gal"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="YCU-ey-ltA" id="5fZ-M0-Zk1"/>
+                        <outlet property="txtMobile" destination="NiT-6e-FaF" id="dio-z3-FzV"/>
+                        <outlet property="txtName" destination="5dt-22-S0H" id="ry1-id-YCo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="green-texture_1160-888" width="626" height="583"/>
+    </resources>
+</document>
